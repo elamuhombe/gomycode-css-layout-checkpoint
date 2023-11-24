@@ -10,191 +10,186 @@
     <!-- HEADER SECTION -->
     <header>
         <!-- logo -->
-        <div class="logo">
-            <img src="photos/logo-default-group-en.svg">
-        </div>
-        <!-- nav bar -->
-        <nav class="nav-links">
-            <ul>
-                <li>About us</li>
+        <nav>
+            <img class="logo" src="photos/logo-default-group-en.svg" alt="Logo">
+            <ul class="links">
+                <li class="active">About us</li>
                 <li>Career</li>
                 <li>Departments</li>
             </ul>
-        </nav>
+        </nav>  
     </header>
     <!-- END OF HEADER SECTION -->
     <!-- MAIN SECTION -->
     <main>
-        <!-- about section -->
-        <section class="about">
-            <!-- about section image -->
-            <div class="about-img">   
-                <img src="photos/sygnet.png">
-            </div>
-         
-            <p class="about-text">Making the healthcare experience more human.</p>
-            <div class="about-info">
-                <p>
-                    We want patients to find the perfect doctor and book an appointment in 
-                    the most easy way. The patient journey should be enjoyable, and that's 
-                    why we are always next to them: to help them find the best possible care. 
-                    Anytime, anywhere.
-                </p>
-                <p>
-                    We also help doctors to better manage their practice and build their online 
-                    reputation. With our integrated end-to-end solution, doctors are able not only
-                     to improve their online presence, but also to devote their time to what really 
-                     matters: their patients.
-                </p>
-            </div>
-            </section>
-        <!-- services section -->
-        <section class="services">
-            <div class="services-info">
-                <img src="photos/icon-patients.svg" class="services-img">
-                <p class="services-title">For patients</p>
-                <p>Find a doctor, book a visit and solve any health-related doubt</p>
-                <div>
-                    <label for="country">Choose country</label>
-                    <select></select>
+        <!-- about section details -->
+        <section id="about">
+            <img class="about-img" src="photos/sygnet.png" alt="sygnet-icon">
+            <!-- about heading -->
+            <p class="about-title">Making the health care experience more human</p>
+            <!-- about text -->
+            <div class="about-container">
+                <div class="about-text">
+                    <p class="about-text-item">We want patients to find the perfect doctor and book an appointment 
+                        in the most easy way. The patient journey should be enjoyable, and 
+                        that's why we are always next to them: to help them find the best 
+                        possible care. Anytime, anywhere.</p>
+                </div>
+            
+                <div class="about-text">
+                    <p class="about-text-item2">We also help doctors to better manage their practice and build their 
+                       online reputation. With our integrated end-to-end solution, doctors are 
+                       able not only to improve their online presence, but also to devote their 
+                       time to what really matters: their patients.</p>
                 </div>
             </div>
-            <div class="services-info">
-                <img src="photos/icon-doctors.svg" class="services-img">
-                <p class="services-title">For doctors</p>
-                <p>Save time managing visits and cut no-shows by half</p>
-                <div>
-                    <label for="country">Choose country</label>
-                    <select></select>
+            <!-- about-container -->
+
+           
+            
+            
+        </section>
+        <!-- end of about section details -->
+
+
+        <!-- about services section -->
+        <section id="services">
+            <div class="services-container">
+                <div class="service-box">
+                    <img src="photos/icon-patients.svg">
+                    <h2 class="service-heading">
+                        For patients
+                    </h2>
+                    <p class="service-text">Find a doctor, book a visit and 
+                        solve any health-related doubt</p>
                 </div>
-            </div>
-            <div class="services-info">
-                <img src="photos/icon-clinics.svg" class="services-img">
-                <p class="services-title">For clinics</p>
-                <p>Deliver an exceptional patient experience in your clinic</p>
-                <div>
-                    <label for="specialist">2 to 20 specialists</label>
-                    <select></select>
-                    <label for="specialist">More than 20 specialists</label>
-                    <select></select>
+                <div class="service-box">
+                    <img src="photos/icon-doctors.svg">
+                    <h2>For doctors</h2>
+                    <p class="service-text">Save time managing visits and cut 
+                        no-shows by half</p>
                 </div>
+                <div class="service-box">
+                    <img src="photos/icon-doctors.svg">
+                    <h2>For clinics</h2>
+                    <p class="service-text">Deliver an exceptional patient 
+                        experience in your clinic</p>
+                </div>
+
             </div>
+            <!-- end of div id service container -->
+
         </section>
         <!-- end of services section -->
-        <!-- brands section -->
-        <section class="brands">
-            <p class="brands-title">We are a global company with local culture
-            </p>
-            <div class="brands-links">
+        
+
+        <!--brands section-->
+        <section id="brands">
+            <h3>We are a global company with local culture</h3>
+            <div class="brand-link">
+
             </div>
+
         </section>
-        <!-- end of brand section -->
-        <section class="stats">
-            <div class="statstext">
-                <p>The world's biggest healthcare platform</p>
-                <p>We work from 9 offices all over the world, bringing Docplanner 
-                    Group to life in 13 countries.</p>
-            </div>
-            <section class="stats-items">
-                
-                <div class="stats-item">
-                    <img src="photos/flag.png">
-                    <p>Leader in 13 countries</p>
-                    <p>Poland, Brazil, Mexico, Spain, Italy, Germany, Turkey, 
-                        Colombia, Czech Republic, Portugal, Argentina, Peru and Chile
-                    </p>
+        <!-- end of section brands -->
+        <section id="stats">
+
+        </section>
+        <!-- end of div id section stats -->
+        <!-- branches section -->
+        <section id="branches">
+            <div class="branch-container">
+                <div class="branch">
+                    <img src="photos/warsaw.png" alt="warsaw-img">
+                    <p class="country">Warsaw</p>
+                    <button class="btn-branch">see openings</button>
+    
                 </div>
-                <div class="stats-item">
-                    <img src="photos/visits.png">
-                    <p>15,000,000 appointments</p>
-                    <p>booked last month</p>
+                <div class="branch">
+                    <img src="photos/barcelona.png" alt="barcelona-img">
+                    <p class="country">Barcelona</p>
+                    <button class="btn-branch">see openings</button>
+    
                 </div>
-                <div class="stats-item">
-                    <img src="photos/patients.png">
-                    <p>90,000,000 patients</p>
-                    <p>visit our websites each month
-                    </p>
+    
+               
+                <div class="branch">
+                    <img src="photos/munich.png" alt="munich-img">
+                    <p class="country">Munich</p>
+                    <button class="btn-branch">see openings</button>
+    
                 </div>
-                <div class="stats-item">
-                    <img src="photos/doctors.png">
-                    <p>210,000 active doctors</p>
-                    <p>trust our solutions</p>
+    
+                <div class="branch">
+                    <img src="photos/istanbul.png" alt="instabul-img">
+                    <p class="country">Instabul</p>
+                    <button class="btn-branch">see openings</button>
+    
                 </div>
-            </section>
-        <!-- end of stats section -->
-        <section class="branches">
-            <div class="countries-text">
-                <p>Improve the lives of millions. Change yours forever.</p>
-                <p>More than 2800 team mates share our same vision, goals and passion. With offices 
-                in Warsaw, Barcelona, Munich, Istanbul, Rome, Rio, Bologna, Mexico City and 
-                Curitiba, our search for great talent never stops.</p>
-                </div>
-                <div class="country-box">
-                    <img src="photos/warsaw.png">
-                    <p>Warsaw</p>
-                    <button>SEE OPENINGS</button>
-                </div>
-                <div class="country-box">
-                    <img src="photos/barcelona.png">
-                    <p>Barcelona</p>
-                    <button>SEE OPENINGS</button>
-                </div>
-                <div class="country-box">
-                    <img src="photos/munich.png">
-                    <p>Munich</p>
-                    <button>SEE OPENINGS</button>
-                </div>
-                <div class="country-box">
-                    <img src="photos/istanbul.png">
-                    <p>Instabul</p>
-                    <button>SEE OPENINGS</button>
-                </div>
-                <div class="country-box">
+                <div class="branch">
                     <img src="photos/rome.png">
-                    <p>Rome</p>
-                    <button>SEE OPENINGS</button>
+                    <p class="country">Rome</p>
+                    <button class="btn-branch">see openings</button>
+    
                 </div>
-                <div class="country-box">
-                    <img src="photos/bologna.png">
-                    <p>Bologna</p>
-                    <button>SEE OPENINGS</button>
+                <div class="branch">
+                    <img src="photos/bologna.png" alt="bologna-img">
+                    <p class="country">Bologna</p>
+                    <button class="btn-branch">see openings</button>
+    
                 </div>
-                <div class="country-box">
-                    <img src="photos/curitiba.png">
-                    <p>Curitiba</p>
-                    <button>SEE OPENINGS</button>
+                <div class="branch">
+                    <img src="photos/curitiba.png" alt="bologna-img">
+                    <p class="country">Curitiba</p>
+                    <button class="btn-branch">see openings</button>
+    
                 </div>
-                <div class="country-box">
-                    <img src="photos/rio-janeiro.png">
-                    <p>Rio De Janeiro</p>
-                    <button>SEE OPENINGS</button>
+                <div class="branch">
+                    <img src="photos/rio-janeiro.png" alt="rio-img">
+                    <p class="country">Warsaw</p>
+                    <button class="btn-branch">see openings</button>
+    
                 </div>
-                <div class="country-box">
-                    <img src="photos/mexico-city.png">
-                    <p>Mexico City</p>
-                    <button>SEE OPENINGS</button>
+                <div class="branch">
+                    <img src="photos/mexico-city.png" alt="mexico-img">
+                    <p class="country">Warsaw</p>
+                    <button class="btn-branch">see openings</button>
+    
                 </div>
-                <div class="country-box">
+                <div class="branch bogota">
                     <img src="photos/bogota.png">
-                    <p>Bogota</p>
-                    <button>SEE OPENINGS</button>
+                    <p class="country">Bogota</p>
+                    <button class="btn-branch">see openings</button>
+    
                 </div>
+
+            </div>
+            <!-- end of div class branch container -->
+            
         </section>
         <!-- end of branches section -->
         <!-- join section -->
-        <section class="join">
-            <p>Sounds interesting? Join us now!</p>
-            <button>See All Current Openings</button>
+        <section id="join">
+            <p class="join-text">Sounds interesting? Join us now!</p>
+            <button class="btn-join">See all current happenings</button>
         </section>
         <!-- end of join section -->
+
     </main>
+        
+    
     <!-- END OF MAIN SECTION -->
-    <!-- FOOTER -->
+    <!-- FOOTER SECTION -->
     <footer>
-        <p>We are leaders in 13 countries: Poland, Turkey, Spain, Italy, Germany, 
-            Czech Republic, Portugal, Mexico, Colombia, Brazil, Argentina, Peru and Chile
+
+        <p class="footer-sect">We are leaders in 13 countries: Poland, Turkey, 
+            Spain, Italy, Germany, Czech Republic, Portugal, Mexico, 
+            Colombia, Brazil, Argentina, Peru and Chile
         </p>
+        <p class="footer-sect">www.docplanner.com © 2023</p>
+
     </footer>
     <!-- END OF FOOTER SECTION -->
-</body>
-</html>
+    </body>
+    </html>
+   
