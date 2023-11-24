@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'Work Sans';
+    src: url('fonts/work sans/WorkSans-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto';
+    background-color: #Fbfcfa;
+}
+/* Links styles  */
+/* Removes underlines */
+a{
+    text-decoration: none;
+}
+button{
+    background-color: #3d83df;
+}
+/* HEADER STYLES */
+
+header {
+   display: flex;
+   width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+    padding: 20px;
+} 
+nav{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+}
+.links {
+    color: #ababab;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.links li {
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.links li:hover {
+    color: #00f; /* Set your desired hover color */
+}
+
+.active{
+    color: #00b39b;
+}
+.logo {
+    width: 28%;
+    height: auto;
+}
+/* MAIN SECTION STYLES */
+main{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    flex-direction: column;
+    text-align: center;
+    max-width: 1200px;
+}
+/* about section */
+/* Add this CSS to your stylesheet */
+.about-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between; /* Adjust to control the space between columns */
+}
+
+.about-text {
+    flex: 0 0 40%; /* Adjust the percentage to control the width of each column */
+    line-height: 1.5rem;
+    margin-bottom: 20px; /* Adjust the value to control the space between columns and rows */
+    padding: 20px; /* Adjust the value to control the internal spacing within each about-text section */
+    border: 1px solid #ddd; /* Optional: Add a border for visual separation */
+    box-sizing: border-box; /* Include padding in the total width/height calculation */
+}
+
+/* services section */
+#services{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.services-container{
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+   
+   
+    
+}
+.service-box{
+    margin-right: 20px;
+
+    flex-basis: 30.3%;
+    max-height: 345px;
+    border: 1px solid #000;
+    text-align: center;
+    text-align: start;
+    
+}
+/* branches section */
+#branches {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjust as needed */
+}
+
+.branch-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.branch{
+    flex-basis: 30.3%;
+    height: 400px;
+}
+.bogota img{
+    width: 310px;
+    height: 280px;
+}
+
+.country{
+    position: absolute;
+    margin-left: 27px;
+    margin-top: 2px;
+    
+
+    
+}
+.btn-branch{
+    display: inline-flex;
+    padding: 5px;
+    margin-top: 2px;
+    color: #ffffff;
+    text-transform: uppercase;
+    }
+    
+
+
+
+
+/* FOOTER STYLES */
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+}
+
+
+
