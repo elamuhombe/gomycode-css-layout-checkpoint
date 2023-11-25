@@ -23,7 +23,7 @@ This website enables patients to book appointments with healthcare professionals
 
 ## Installation
 METHOD 1: Dowload to your local computer
-1. git clone https://github.com/elamuhombe/git clone https://github.com/yourusername/yourproject.git
+1. git clone https://github.com/elamuhombe/gomycode-css-layout-checkpoint.git
 2. cd yourproject in your local computer
 3. npm install
 
