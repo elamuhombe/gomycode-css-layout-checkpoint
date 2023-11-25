@@ -24,25 +24,24 @@ button{
 /* HEADER STYLES */
 
 header {
-   display: flex;
-   width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 10px;
-    padding: 20px;
-} 
+    display: flex;
+    color: #fff;
+    padding: 15px;
+   text-align: center;
+   margin-left: 50px;
+   margin-right: 50px;
+}
 nav{
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
 }
 .links {
     color: #ababab;
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
 .links li {
     font-size: 16px;
@@ -69,6 +68,7 @@ main{
     flex-direction: column;
     text-align: center;
     max-width: 1200px;
+    margin-left: 50px;
 }
 /* about section */
 /* Add this CSS to your stylesheet */
@@ -76,39 +76,114 @@ main{
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap to the next line */
     justify-content: space-between; /* Adjust to control the space between columns */
+    margin: auto;
+   
 }
 
-.about-text {
+.about-text,
+.about-text1 {
     flex: 0 0 40%; /* Adjust the percentage to control the width of each column */
-    line-height: 1.5rem;
+    line-height: 1.6rem;
     margin-bottom: 20px; /* Adjust the value to control the space between columns and rows */
     padding: 20px; /* Adjust the value to control the internal spacing within each about-text section */
-    border: 1px solid #ddd; /* Optional: Add a border for visual separation */
+
     box-sizing: border-box; /* Include padding in the total width/height calculation */
+    max-width: 500px;
+    color: #747474;
+    font-size: 1rem;
+    padding: 0;
+    text-align:start
+}
+.about-text1{
+    margin-top: 20px;
+    margin-right: 2px;
+
+}
+.about-text1{
+    margin-left: 0;
+
 }
 
 /* services section */
-#services{
-    display: flex;
-    flex-wrap: wrap;
-   
-}
 .services-container{
     display: flex;
-    justify-content: space-around; /* Adjust as needed */
+    margin-left: 2px;
    
    
     
 }
 .service-box{
-    margin-right: 20px;
-
+    flex-direction: column;
+    padding: 1%;
+   
+   
     flex-basis: 30.3%;
-    max-height: 345px;
-    border: 1px solid #000;
+    max-height: 400px;
     text-align: center;
     text-align: start;
+    color: #ffffff;
     
+}
+.service-left{
+    padding-top: 50px;
+    margin-left:50px;
+    padding-bottom: 50px;
+}
+.service-text,
+.select{
+    font-size: 1.5rem;
+}
+.select{
+    margin-top: 140px;
+    position: relative;
+}
+.service-box1{
+    background-color: #00ccb1;
+    border-radius: 10px;
+    width: 300px;
+    
+}
+.service-box2{
+    background-color: #3d83df;
+    border-radius: 10px;
+    width: 270px;
+}
+.service-box3{
+    background-color: #1b2734;
+    border-radius: 10px;
+    width: 300px;
+}
+/* Dropdown menu styles */
+
+
+  .choose{
+   border: none;
+   background-color:#00ccb1;
+   font-size: 1.2rem;
+   position: relative;
+   z-index: 1;
+   color: #fff;
+   text-decoration: underline;
+}
+.choose-2{
+    border: none;
+    background-color:#3d83df;
+    font-size: 1.2rem;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-decoration: underline;
+    
+
+}
+.choose-3{
+    border: none;
+    background-color:#1b2734;
+    font-size: 1.2rem;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-decoration: underline;
 }
 /* branches section */
 #branches {
@@ -124,8 +199,17 @@ main{
 
 .branch{
     flex-basis: 30.3%;
-    height: 400px;
+    height: 350px;
+    border:thin solid yellow;
+    border-radius: 10px;
+    width: 280px;
+    margin-top: 5px;
+   
 }
+.branch img{
+    border-radius: 10px;
+}
+
 .bogota img{
     width: 310px;
     height: 280px;
@@ -133,24 +217,70 @@ main{
 
 .country{
     position: absolute;
-    margin-left: 27px;
+    margin-left: 50px;
     margin-top: 2px;
-    
-
-    
 }
-.btn-branch{
+.btn-openings{
+    margin-left: 150px;
     display: inline-flex;
     padding: 5px;
     margin-top: 2px;
     color: #ffffff;
     text-transform: uppercase;
-    }
+    border: 1px solid #3d83df;
+    border-radius: 5px;
+}
+/* brands section */
+.brands-container{
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+ 
+}
+.brands-box{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    max-width: 500px;
+   
+ 
+}
+.brands-title{
+   text-align: justify;
+   max-width: 340px;
+   max-height: 400px;
+   margin-right:130px;
+}
+.brands-links-box{
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    line-height: 53px;
+  
+}
+
+.brands-link a{
+    color:#ababab;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.sygnet-icon{
+    width: 15px;
+}
+
+.heading{
+    color:#00b39b;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+.tuotempo img{
+    width: 130px;
     
-
-
-
-
+}
+.gipo img{
+    width: 50px;
+}
 /* FOOTER STYLES */
 footer{
     display: flex;
@@ -158,6 +288,3 @@ footer{
     padding: 20px;
     align-items: center;
 }
-
-
-
