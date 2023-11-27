@@ -1,14 +1,10 @@
-@font-face {
-    font-family: 'Work Sans';
-    src: url('fonts/work sans/WorkSans-VariableFont_wght.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+/* Resetting the default html styling */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* BODY STYLES */
 body{
     font-family: 'Roboto';
     background-color: #Fbfcfa;
@@ -18,11 +14,24 @@ body{
 a{
     text-decoration: none;
 }
+/* button styles */
 button{
     background-color: #3d83df;
+    margin-left: 150px;
+    display: inline-flex;
+    padding: 5px;
+    margin-top: 2px;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: 1px solid #3d83df;
+    border-radius: 5px;
 }
-/* HEADER STYLES */
-
+/* h2 heading styles */
+h2{
+    font-size: 36px;
+}
+/* HEADER SECTION */
+/* header container styles */
 header {
     display: flex;
     color: #fff;
@@ -31,98 +40,130 @@ header {
    margin-left: 50px;
    margin-right: 50px;
 }
+/* Navigation container styles */
 nav{
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+/* Logo styling */
+.logo {
+    width: 28%; /* Set the width of the logo to 28% of its containing element */
+    height: auto; /* Allow the height to adjust automatically to maintain aspect ratio */
+}
+/* Navigation links container styles */
 .links {
-    color: #ababab;
     list-style: none;
     display: flex;
-    gap: 10px;
 }
+/* Individual navigation link styles */
 .links li {
+    color: #ababab;
     font-size: 16px;
+    font-weight: 600;
     cursor: pointer;
-    transition: color 0.3s ease;
+    margin-right: 10px;
+    position: relative;
 }
-
-.links li:hover {
-    color: #00f; /* Set your desired hover color */
+/* Navigation link styling */
+.links li a {
+    color:#ababab;/* Link text color */
+    padding: 5px 10px; /* Padding around link text */
+    display: block; /* Display as block element for better styling */
 }
-
-.active{
+/* Navigation links hover effects styling */
+.links li a:hover {
     color: #00b39b;
 }
-.logo {
-    width: 28%;
-    height: auto;
+/* Departments sub menus display and position styling */
+.depart:hover .sub-links{
+    display: block;
+    list-style: none;
+    left: -200px;
 }
+/* About us link styling */
+.links li.active a{
+    color:#00b39b;
+}
+/* Submenu link styles */
+.sub-links li a {
+    color: #ababab; /* Submenu link text color */
+}
+.sub-links {
+    display: none;
+    position: absolute;
+    width: 300px;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  .sub-links li a{
+    color: #ababab;
+  }
+  /* Submenu link hover styles */
+.sub-links li:hover a {
+    color: #00b39b; /* Set the hover color for submenu links */
+}
+
+
 /* MAIN SECTION STYLES */
-main{
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    flex-direction: column;
-    text-align: center;
-    max-width: 1200px;
-    margin-left: 50px;
+/* MAIN SECTION STYLES */
+main {
+    display: flex; /* Display as flex container */
+    align-items: center; /* Center-align items vertically */
+    margin-left: auto; /* Auto margin on the left side */
+    flex-direction: column; /* Stack child elements vertically */
+    text-align: center; /* Center-align text within the main section */
+    max-width: 1200px; /* Set the maximum width for better readability */
+    margin-left: 50px; /* Add a left margin for better spacing */
 }
-/* about section */
-/* Add this CSS to your stylesheet */
+
+/* About Section Styles */
 .about-container {
-    display: flex;
+    display: flex; /* Display as flex container */
     flex-wrap: wrap; /* Allow items to wrap to the next line */
     justify-content: space-between; /* Adjust to control the space between columns */
-    margin: auto;
-   
+    margin: auto; /* Center the container horizontally */
 }
 
-.about-text,
-.about-text1 {
-    flex: 0 0 40%; /* Adjust the percentage to control the width of each column */
-    line-height: 1.6rem;
-    margin-bottom: 20px; /* Adjust the value to control the space between columns and rows */
-    padding: 20px; /* Adjust the value to control the internal spacing within each about-text section */
-
-    box-sizing: border-box; /* Include padding in the total width/height calculation */
-    max-width: 500px;
-    color: #747474;
-    font-size: 1rem;
-    padding: 0;
-    text-align:start
+.title {
+    margin-top: 50px; /* Top margin for the title */
+    font-size: 1.8rem; /* Font size of the title */
+    color: #00ccb1; /* Color of the title */
 }
-.about-text1{
-    margin-top: 20px;
-    margin-right: 2px;
 
+.about-text {
+    flex: 0 0 49%; /* Adjust the percentage to control the width of each column */
+    line-height: 1.6rem; /* Line height for better readability */
+    margin-top: 50px; /* Top margin for the about text */
+    margin-bottom: 100px; /* Bottom margin for better spacing between columns and rows */
+    padding: 20px; /* Internal padding within each about-text section */
+    max-width: 500px; /* Maximum width of each column */
+    color: #747474; /* Color of the text */
+    font-size: 18px; /* Font size of the text */
+    padding: 0; /* Resetting padding */
+    text-align: start; /* Text alignment, adjust as needed */
 }
-.about-text1{
-    margin-left: 0;
 
+.left-text {
+    margin-left: 0; /* Resetting left margin for left-aligned text */
 }
 
 /* services section */
 .services-container{
     display: flex;
     margin-left: 2px;
-   
-   
-    
 }
 .service-box{
     flex-direction: column;
     padding: 1%;
-   
-   
     flex-basis: 30.3%;
     max-height: 400px;
     text-align: center;
     text-align: start;
     color: #ffffff;
-    
 }
 .service-left{
     padding-top: 50px;
@@ -137,21 +178,23 @@ main{
     margin-top: 140px;
     position: relative;
 }
+
 .service-box1{
     background-color: #00ccb1;
     border-radius: 10px;
-    width: 300px;
+    width: 320px;
     
 }
 .service-box2{
     background-color: #3d83df;
     border-radius: 10px;
-    width: 270px;
+    width: 300px;
 }
 .service-box3{
     background-color: #1b2734;
     border-radius: 10px;
-    width: 300px;
+    width: 320px;
+ 
 }
 /* Dropdown menu styles */
 
@@ -176,6 +219,16 @@ main{
     
 
 }
+
+.top{
+    position: absolute;
+    bottom: 50px;
+    border:none;
+    background-color:#1b2734;
+    color: #fff;
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
 .choose-3{
     border: none;
     background-color:#1b2734;
@@ -185,11 +238,13 @@ main{
     color: #fff;
     text-decoration: underline;
 }
+
 /* branches section */
 #branches {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; /* Adjust as needed */
+    justify-content: space-around; 
+  
 }
 
 .branch-container {
@@ -199,36 +254,40 @@ main{
 
 .branch{
     flex-basis: 30.3%;
-    height: 350px;
-    border:thin solid yellow;
+    height: 400px;
+    border:thin solid rgb(241, 241, 227);
     border-radius: 10px;
     width: 280px;
-    margin-top: 5px;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+.branch:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a box shadow */
+}
+.branch-box{
+    box-sizing: border-box;
+    width:fit-content;
    
+    padding-bottom: 20px;
+
+}
+.btn-country{
+    margin-top: 20px;
 }
 .branch img{
     border-radius: 10px;
+    width: 100%;
 }
 
 .bogota img{
-    width: 310px;
-    height: 280px;
+    width: 100%;
+    max-height:fit-content;
 }
 
 .country{
     position: absolute;
     margin-left: 50px;
     margin-top: 2px;
-}
-.btn-openings{
-    margin-left: 150px;
-    display: inline-flex;
-    padding: 5px;
-    margin-top: 2px;
-    color: #ffffff;
-    text-transform: uppercase;
-    border: 1px solid #3d83df;
-    border-radius: 5px;
 }
 /* brands section */
 .brands-container{
@@ -251,21 +310,21 @@ main{
    margin-right:130px;
 }
 .brands-links-box{
-   
-    display: flex;
+   display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     line-height: 53px;
-  
 }
-
+  
 .brands-link a{
     color:#ababab;
     font-weight: bold;
     font-size: 1.2rem;
+    
 }
 .sygnet-icon{
     width: 15px;
+    left: 10px;
 }
 
 .heading{
@@ -281,10 +340,35 @@ main{
 .gipo img{
     width: 50px;
 }
+/* join section */
+.btn-join{
+    padding: 12px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 100px;
+}
+/* hr styling */
+hr{
+    color:#ababab;
+    opacity: 15%;
+}
 /* FOOTER STYLES */
 footer{
     display: flex;
     flex-direction: column;
     padding: 20px;
+    padding-top: 40px;
     align-items: center;
+    font-size: 13.5px;
+    color: #747474;
+}
+/* footer links color */
+footer a{
+    color: #3d83df;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+.footer-sect{
+    margin-bottom: 10px;
 }
