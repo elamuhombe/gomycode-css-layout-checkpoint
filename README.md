@@ -40,4 +40,4 @@ METHOD 2 Forking
 
 ## License
 The project is license under my name: Elaine Muhombe
-3. Navigate through the sections to learn more about the different sections and links available.
+
