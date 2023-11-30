@@ -1,0 +1,565 @@
+/* reset the default margin and padding and margin */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY STYLING */
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/* LINKS STYLING */
+a{
+    text-decoration: none; /* removes underline from links */
+}
+/* H1 STYLING */
+h1{
+    margin: 2em 0;
+    font-family: Work Sans,Arial,sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: -.3px;
+    font-size: 2.125em;
+    color: #00b39b;
+    text-align: center;
+}
+/* HEADER SECTION */
+/* header styling */
+header {
+    display: flex;
+    color: #fff;
+    padding: 15px;
+   text-align: center;
+   margin-left: 50px;
+   margin-right: 50px;
+   position: fixed;
+   background-color: #ffffff;
+}
+/* Navigation container styles */
+nav{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Logo styling */
+.logo {
+    width: 28%; /* Set the width of the logo to 28% of its containing element */
+    height: auto; /* Allow the height to adjust automatically to maintain aspect ratio */
+}
+/* Navigation links container styles */
+.links {
+    list-style: none;
+    display: flex;
+}
+/* Individual navigation link styles */
+.links li {
+    color: rgb(116, 116, 116);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    cursor: pointer;
+    margin-right: 10px;
+    position: relative;
+}
+/* Navigation link styling */
+.links li a {
+    color:#ababab;/* Link text color */
+    padding: 5px 10px; /* Padding around link text */
+    display: block; 
+}
+/* Navigation links hover effects styling */
+.links li a:hover {
+    color: #00b39b;
+}
+/* Departments sub menus display and position styling */
+.depart:hover .sub-links{
+    display: block;
+    list-style: none;
+    left: -100px;
+}
+/* About us link styling */
+.links li.active a{
+    color:#00b39b;
+    font-size: 16px;
+}
+/* About us Submenu link styles */
+.sub-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.sub-links li a {
+    display: block;
+    color: #ababab;
+}
+/* Submenu link hover styles */
+.sub-links li:hover a {
+    color: #00b39b;
+}
+/* --MAIN SECTION-- */
+/* MAIN STYLING*/
+/* centers all elements inside main tag */
+main{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    flex-direction: column;
+    text-align: center;
+    max-width: 1200px;
+    margin-left: 50px;
+}
+
+/* ABOUT SECTION STYLING */
+/* About-container styles */
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+/* paragraph styles */
+.about-p{
+    flex: 0 0 49%;
+    line-height: 28px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 20px;
+    max-width: 500px;
+    color: #747474;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0;
+    text-align: start;
+}
+ 
+/* SERVICES SECTION*/
+/* Container for services styling */
+.services-container{
+    display: flex;
+    align-items: start;
+    margin-left: 2px;
+}
+/* Individual service box styling */
+.service-box{
+    flex-direction: column;
+    padding: 1%;
+    flex-basis: 30.3%;
+    max-height: 345px;
+    text-align: center;
+    text-align: start;
+    color: #ffffff;
+}
+/* Additional styling for the left part of services (service-left) */
+.service-left{
+    padding-top: 50px;
+    margin-left:50px;
+    padding-bottom: 50px;
+}
+/* Styling for service title  */
+.service-title{
+    padding-top: 3px;
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 20.8px;
+    text-align: start;
+}
+/* Styling for service text */
+.service-text{
+    font-family: Work Sans;
+    font-weight: 300;
+    font-size: 16px;
+    font-size: 24px;
+}
+/* Styling for select element */
+.select{
+    font-size: 1.5rem;
+    margin-top: 140px;
+    position: relative;
+}
+/* Styling for service box 1 */
+.service-box1 {
+    background-color: #00ccb1;
+    border-radius: 10px;
+    width: 320px;
+}
+
+/* Styling for service box 2 */
+.service-box2 {
+    background-color: #3d83df;
+    border-radius: 10px;
+    width: 300px;
+}
+
+/* Styling for service box 3 */
+.service-box3 {
+    background-color: #1b2734;
+    border-radius: 10px;
+    width: 320px;
+}
+
+/* Dropdown menu style 1 */
+.choose-1 {
+    border: none;
+    background-color: #00ccb1;
+    font-size: 1.2rem;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Dropdown menu style 2 */
+.choose-2 {
+    border: none;
+    background-color: #3d83df;
+    font-size: 1.2rem;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Styling for a position at the bottom */
+.top {
+    position: absolute;
+    bottom: 50px;
+    border: none;
+    background-color: #1b2734;
+    color: #fff;
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+
+/* Dropdown menu style 3 */
+.choose-3 {
+    border: none;
+    background-color: #1b2734;
+    font-size: 1.2rem;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* BRANDS SECTION */
+/* brands container styling*/
+.brands-container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+}
+/* Box containing brands */
+.brands-box{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    max-width: 700px;
+}
+/* Title styling for brands */
+.brands-title{
+    font-size: 26px;
+    font-weight: 300;
+    text-align: start;
+}
+/* Container for brand links */
+.brands-links-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    line-height: 60px;
+    justify-content: space-between;
+}
+/* Container for brand links */
+.brands-link{
+    width: calc(25% - 10px);
+}
+/* Styling for brand link text */
+.brands-link a{
+    color:#ababab;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+/* sygnet icon styling */
+.sygnet-icon{
+    width: 15px;
+    left: 5px;
+}
+/* Heading styling */
+.heading{
+    color:#00b39b;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+/* tuotempo image styling */
+.tuotempo img{
+    width: 130px;
+}
+/* gipo image styling */
+.gipo img{
+    margin-left: -120px;
+    width: 35px;
+}
+/* cloud image styling */
+.cloud img{
+    height: 30px;
+}
+
+
+
+/* STATS SECTION */
+/* Container for stats */
+.stats-container{
+    background-color: #e5faf8;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+/* Styling for individual stat boxes */
+.stats-box {
+    display: inline-flex;
+    flex-direction: row;
+    padding: 20px;
+    box-sizing: border-box;
+}
+/* Paragraph styling for headings in stats */
+.headings p{
+    font-size: 14px;
+    color: #747474;
+    line-height: 24px;
+}
+/* Styling for data-box1 */
+.data-box1{
+    border-radius: 5px;
+    display: inline-flex;
+    padding-top: 15px;
+    margin: 15px;
+    width: 230px;
+    height: 250px;
+    background-color: #ffffff;
+}
+/* Styling for data-box2 */
+.data-box2{
+    border-radius: 5px;
+    display: inline-flex;
+    position: relative;
+    padding-top: 15px;
+    margin: 10px;
+    margin-left: 5px;
+    width: 230px;
+    height: 250px;
+    background-color: #ffffff;
+    flex: 2;
+}
+/* Styling for data-box3 */
+.data-box3{
+    border-radius: 5px;
+    display: inline-flex;
+    padding-top: 15px;
+    margin: 15px;
+    width: 230px;
+    height: 250px;
+    background-color: #ffffff;
+}
+/* Styling for data-box4 */
+.data-box4{
+    border-radius: 5px;
+    display: inline-flex;
+    padding-top: 15px;
+    margin: 10px;
+    margin-left: 5px;
+    width: 230px;
+    height: 250px;
+    background-color: #ffffff;
+}
+.data-box-contents{
+    margin: 5px;
+}
+/* data-box image styling */
+.data-box img{
+    width: 35px;
+    height: 40px;
+}
+/* h3 styling */
+h3{
+    margin-top: 17px;
+    font-family: "Work Sans", Arial, sans-serif;
+    font-size: 24px;
+    letter-spacing: -0.3px;
+    line-height: 31.2px;
+    color: #00b39b;
+    font-weight: 200;
+}
+/* data-box1, data-box2 and data-box3 paragraph styling */
+.data-box1,
+.data-box2,
+.data-box3,
+.data-box4 p{
+    margin-top: 12px;
+    color: #747474;
+    font-size: 13px;
+    line-height: 16.9px;
+    justify-content: center;
+}
+
+/* BRANCHES SECTION */
+#branches {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/* Styling for branch boxes */
+.branch-box > div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 200px;
+    width: 600px;
+}
+/* Styling for branch top section */
+.branch-top{
+    align-items: center;
+    column-count: 1;
+    column-gap: 0;
+    flex: 1;
+}
+/* Styling for branch columns */
+.branch-column{
+    display: block;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 80%;
+}
+/* Paragraph styling for column text */
+    .column-text{
+    font-size: 14px;
+    line-height: 24px;
+    color: #747474;
+}
+/* Container styling for branches */
+.branch-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Styling for individual branch */
+.branch{
+    flex-basis: 30.3%;
+    height: 400px;
+    border:thin solid rgb(241, 241, 227);
+    border-radius: 30px;
+    width: 280px;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+/* branch div hover effects styling */
+.branch:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a box shadow on hover */
+}
+
+/* branch-box styling */
+.branch-box {
+    width: fit-content;
+    padding-bottom: 20px;
+}
+
+/* branch image styling */
+.branch img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* Bogota image styling */
+.bogota img {
+    width: 100%;
+    max-height: fit-content;
+}
+
+/* Text styling for branch */
+.branch-text {
+    color: #747474;
+}
+
+/* Styling for span openings */
+.openings {
+    margin: 20px;
+    margin-left: 130px;
+    display: inline-flex;
+    padding: 12px 15px 15px 10px;
+    background-color: #3d83df;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 10px;
+    letter-spacing: 0.4px;
+    text-align: start;
+    color: #ffffff;
+}
+/* Styling for span openings on hover */
+.openings:hover {
+    background-color: #1662c6;
+    box-shadow: rgba(0, 0, 0, 0) 0px 5px 10px 0px; /* Add a box shadow on hover */
+}
+
+/* JOIN SECTION */
+/* Styling for heading in Join Section */
+.heading h1 {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 39px;
+    color: #333;
+    font-style: normal;
+    margin-bottom: 0.75em;
+}
+/* Styling for join-span */
+.join-span {
+    margin: 155px;
+    margin-top: 4px;
+    margin-top: -10px;
+    padding: 14px 18px;
+    background-color: #3d83df;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 12px;
+    letter-spacing: 0.48px;
+    border-radius: 4px;
+}
+/* Styling for join-span on hover */
+.join-span:hover {
+    background-color: #1662c6;
+}
+
+/* HR */
+hr{
+    margin-top: 80px;
+    opacity: 20%;
+}
+/* FOOTER SECTION */
+
+/* Styling for the footer container */
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 40px;
+    align-items: center;
+    font-size: 13.5px;
+    color: #ababab;
+}
+/* Styling for footer links */
+footer a {
+    color: #3d83df;
+}
+/* Styling for footer links on hover */
+footer a:hover {
+    text-decoration: underline;
+}
